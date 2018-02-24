@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/icon_popup"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/popup_more_relativeLayout_collection"
+        android:layout_width="120dp"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/popup_more_imageView_collection"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/popup_more_textView_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="收藏帖子"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/popup_more_relativeLayout_share"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_top_00">s
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="分享"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/popup_more_relativeLayout_follow"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/border_top_00">
+
+        <ImageView
+            android:id="@+id/popup_more_imageView_follow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/popup_more_textView_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="关注楼主"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

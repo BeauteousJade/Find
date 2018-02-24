@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_bg_normal"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/item_recyclerView_message_discuss_imageView_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_message_discuss_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="name"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_message_discuss_imageView_head"
+        app:layout_constraintLeft_toRightOf="@id/item_recyclerView_message_discuss_imageView_head"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_message_discuss_imageView_head" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_message_discuss_textView_reply"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_all_00"
+        android:gravity="center"
+        android:text="回复"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_message_discuss_imageView_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_message_discuss_textView_name" />
+
+    <com.example.pby.find.customview.RichTextView
+        android:id="@+id/item_recyclerView_message_discuss_textView_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_all_01"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_message_discuss_imageView_head" />
+
+    <com.example.pby.find.customview.RichTextView
+        android:id="@+id/item_recyclerView_message_discuss_textView_discuss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_message_discuss_textView_content" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_message_discuss_textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="2018-1-1"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_message_discuss_textView_discuss" />
+</android.support.constraint.ConstraintLayout>

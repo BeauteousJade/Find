@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_recyclerView_message_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/item_recyclerView_message_imageView_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toTopOf="@id/item_recyclerView_message_textView_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.javonlee.dragpointview.view.DragPointView
+        android:id="@+id/item_recyclerView_message_DragPointView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/bg_round_02"
+        android:text=""
+        android:textColor="#FFF"
+        android:visibility="gone"
+        app:canDrag="false"
+        app:centerMinRatio="0.5"
+        app:dragCircleRadius="100dp"
+        app:layout_constraintLeft_toRightOf="@id/item_recyclerView_message_imageView_icon"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_message_imageView_icon"
+        app:recoveryAnimBounce="0.25" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_message_textView_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/item_recyclerView_message_imageView_icon"
+        app:layout_constraintRight_toRightOf="@id/item_recyclerView_message_imageView_icon"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_message_imageView_icon" />
+</android.support.constraint.ConstraintLayout>

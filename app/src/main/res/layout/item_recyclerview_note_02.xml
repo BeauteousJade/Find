@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_recyclerView_note_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_bg_normal"
+    android:paddingBottom="5dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/item_recyclerView_note_imageView_head"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="20dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="name"
+        android:textColor="@color/item_textColor"
+        android:textSize="15sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_note_imageView_head"
+        app:layout_constraintLeft_toRightOf="@id/item_recyclerView_note_imageView_head"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_imageView_head" />
+
+    <com.example.pby.find.customview.RichTextView
+        android:id="@+id/item_recyclerView_note_textView_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_note_imageView_head" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="10dp"
+        android:text="2018-1-1"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_note_textView_content" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_appreciate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="10"
+        android:textColor="@color/item_textColor"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_textView_time" />
+
+    <ImageView
+        android:id="@+id/item_recyclerView_note_imageView_appreciate"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/icon_appreciate_00"
+
+        android:textColor="@color/item_textColor"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_note_textView_time"
+        app:layout_constraintRight_toLeftOf="@id/item_recyclerView_note_textView_appreciate"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_textView_time" />
+
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="10"
+        android:textColor="@color/item_textColor"
+
+        app:layout_constraintRight_toLeftOf="@id/item_recyclerView_note_imageView_appreciate"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_textView_time" />
+
+    <ImageView
+        android:id="@+id/item_recyclerView_note_imageView_discuss"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/icon_discuss"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_note_textView_time"
+        app:layout_constraintRight_toLeftOf="@id/item_recyclerView_note_textView_discuss"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_textView_time" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="10"
+        android:textColor="@color/item_textColor"
+
+        app:layout_constraintRight_toLeftOf="@id/item_recyclerView_note_imageView_discuss"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_textView_time" />
+
+    <ImageView
+        android:id="@+id/item_recyclerView_note_imageView_read"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/icon_discuss"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_note_textView_time"
+        app:layout_constraintRight_toLeftOf="@id/item_recyclerView_note_textView_read"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_textView_time" />
+</android.support.constraint.ConstraintLayout>

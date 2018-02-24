@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pby.find.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/activity_main_frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_main_jpTabBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></FrameLayout>
+
+    <com.example.pby.find.customview.FindTabBar
+        android:id="@+id/activity_main_jpTabBar"
+        android:layout_width="0dp"
+        android:background="@color/bg_bottom"
+        app:TabNormalColor="@color/bottom_textColor"
+        android:layout_height="50dp"
+        app:BadgeColor="#e78170"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.example.pby.find.customview.FindTabBar>
+</android.support.constraint.ConstraintLayout>

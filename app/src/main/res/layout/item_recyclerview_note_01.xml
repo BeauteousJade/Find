@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/item_recyclerView_note_imageView_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_area_comic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="name"
+        android:textColor="@color/item_textColor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/item_recyclerView_note_textView_time"
+        app:layout_constraintStart_toEndOf="@+id/item_recyclerView_note_imageView_head"
+        app:layout_constraintTop_toTopOf="@+id/item_recyclerView_note_imageView_head"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:text="2017-1-1"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_note_imageView_head"
+        app:layout_constraintLeft_toLeftOf="@id/item_recyclerView_note_textView_name"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_note_textView_name" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_note_textView_areaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="来自运动专区"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_imageView_head" />
+
+    <com.example.pby.find.customview.RichTextView
+        android:id="@+id/item_recyclerView_note_textView_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/item_textColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_recyclerView_note_imageView_head" />
+
+    <LinearLayout
+        android:id="@+id/item_recyclerView_note_linearLayout_images"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_recyclerView_note_textView_content"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_recyclerView_note_linearLayout_read"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_note_linearLayout_discuss"
+        app:layout_constraintRight_toLeftOf="@id/item_recyclerView_note_linearLayout_discuss"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_note_linearLayout_discuss">
+
+        <ImageView
+            android:id="@+id/item_recyclerView_note_imageView_read"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_read" />
+
+        <TextView
+            android:id="@+id/item_recyclerView_note_textView_read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="10"
+            android:textColor="@color/item_textColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_recyclerView_note_linearLayout_discuss"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:textColor="@color/item_textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/item_recyclerView_note_imageView_discuss"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/icon_discuss" />
+
+        <TextView
+            android:id="@+id/item_recyclerView_note_textView_discuss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="10"
+            android:textColor="@color/item_textColor" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

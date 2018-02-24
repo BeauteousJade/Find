@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/popup_menu_head_textView_setting"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_round_05"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="设置为头像"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E0E0E0" />
+
+    <TextView
+        android:id="@+id/popup_menu_head_textView_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_round_05"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/decoration_gray_00" />
+
+    <TextView
+        android:id="@+id/popup_menu_head_textView_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_round_05"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+</LinearLayout>

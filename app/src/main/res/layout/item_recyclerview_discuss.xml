@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/item_recyclerView_discuss_imageView_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_discuss_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/item_recyclerView_discuss_textView_floor"
+        app:layout_constraintStart_toEndOf="@+id/item_recyclerView_discuss_imageView_head"
+        app:layout_constraintTop_toTopOf="@+id/item_recyclerView_discuss_imageView_head" />
+
+    <ImageView
+        android:id="@+id/item_recyclerView_discuss_imageView_level"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_discuss_textView_name"
+        app:layout_constraintLeft_toRightOf="@id/item_recyclerView_discuss_textView_name"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_discuss_textView_name" />
+
+    <ImageView
+        android:id="@+id/item_recyclerView_discuss_imageView_host"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/icon_louzhu"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_discuss_textView_name"
+        app:layout_constraintLeft_toRightOf="@id/item_recyclerView_discuss_imageView_level"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_discuss_textView_name" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_discuss_textView_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第1楼"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_discuss_imageView_head"
+        app:layout_constraintLeft_toLeftOf="@id/item_recyclerView_discuss_textView_name"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_discuss_textView_name" />
+
+    <View
+        android:id="@+id/item_recyclerView_discuss_view_line"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:background="#8E8E8E"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_discuss_textView_floor"
+        app:layout_constraintLeft_toRightOf="@id/item_recyclerView_discuss_textView_floor"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_discuss_textView_floor" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_discuss_textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:text="2018-1-1"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_discuss_textView_floor"
+        app:layout_constraintLeft_toRightOf="@id/item_recyclerView_discuss_view_line"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_discuss_textView_floor" />
+
+    <TextView
+        android:id="@+id/item_recyclerView_discuss_textView_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="回复"
+        android:textColor="#8E8E8E"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/item_recyclerView_discuss_imageView_head"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/item_recyclerView_discuss_imageView_head" />
+
+    <com.example.pby.find.customview.RichTextView
+        android:id="@+id/item_recyclerView_discuss_RichTextView_parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#C1C1C1"
+        android:text="12312321312312312"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/item_recyclerView_discuss_imageView_head"
+        app:layout_constraintRight_toRightOf="@id/item_recyclerView_discuss_textView_reply"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_discuss_imageView_head" />
+
+    <com.example.pby.find.customview.RichTextView
+        android:id="@+id/item_recyclerView_discuss_RichTextView_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="12312321321312312"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@id/item_recyclerView_discuss_imageView_head"
+        app:layout_constraintRight_toRightOf="@id/item_recyclerView_discuss_textView_reply"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_discuss_RichTextView_parent" />
+
+    <LinearLayout
+        android:id="@+id/item_recyclerView_discuss_linearLayout_images"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_recyclerView_discuss_RichTextView_content"></LinearLayout>
+</android.support.constraint.ConstraintLayout>

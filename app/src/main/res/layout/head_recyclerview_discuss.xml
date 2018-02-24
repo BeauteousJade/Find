@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/head_recyclerView_discuss_imageView_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/head_recyclerView_discuss_textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="names"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_discuss_imageView_head"
+        app:layout_constraintLeft_toRightOf="@id/head_recyclerView_discuss_imageView_head"
+        app:layout_constraintTop_toTopOf="@id/head_recyclerView_discuss_imageView_head" />
+
+    <ImageView
+        android:id="@+id/head_recyclerView_discuss_imageView_level"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_discuss_imageView_head"
+        app:layout_constraintLeft_toRightOf="@id/head_recyclerView_discuss_textView_name"
+        app:layout_constraintTop_toTopOf="@id/head_recyclerView_discuss_imageView_head" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/icon_louzhu"
+        app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_discuss_textView_name"
+        app:layout_constraintLeft_toRightOf="@id/head_recyclerView_discuss_imageView_level"
+        app:layout_constraintTop_toTopOf="@id/head_recyclerView_discuss_textView_name" />
+
+    <TextView
+        android:id="@+id/head_recyclerView_discuss_textView_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="2018-1-1"
+        app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_discuss_imageView_head"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/head_recyclerView_discuss_imageView_head" />
+
+    <com.example.pby.find.customview.RichTextView
+        android:id="@+id/head_recyclerView_discuss_richTextView_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/head_recyclerView_discuss_imageView_head"
+        app:layout_constraintRight_toRightOf="@id/head_recyclerView_discuss_textView_time"
+        app:layout_constraintTop_toBottomOf="@id/head_recyclerView_discuss_imageView_head" />
+
+    <LinearLayout
+        android:id="@+id/head_recyclerView_discuss_linearLayout_images"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/head_recyclerView_discuss_imageView_head"
+        app:layout_constraintRight_toRightOf="@id/head_recyclerView_discuss_textView_time"
+        app:layout_constraintTop_toBottomOf="@id/head_recyclerView_discuss_richTextView_content"></LinearLayout>
+
+    <View
+        android:id="@+id/head_recyclerView_discuss_view_line00"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="10dp"
+        android:background="#DEDEDE"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_recyclerView_discuss_linearLayout_images" />
+
+    <TextView
+        android:id="@+id/head_recyclerView_discuss_textView_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="回复"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/head_recyclerView_discuss_view_line00" />
+
+    <View
+        android:id="@+id/head_recyclerView_discuss_view_line01"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#DEDEDE"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_recyclerView_discuss_textView_tip" />
+</android.support.constraint.ConstraintLayout>

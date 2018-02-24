@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/bg_toolbar</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="color_textView_normal">#969696</color>
+    <color name="color_textView_click">#000000</color>
+
+    <color name="bg_toolbar">#2fc0ed</color>
+    <color name="bg_toolbar_night">#A8A8A8</color>
+
+    <color name="item_textColor">#969696</color>
+    <color name="item_textColor_night">#F8F8FF</color>
+    <color name="item_bg_normal">#FCFCFC</color>
+    <color name="item_bg_normal_night">#B7B7B7</color>
+    <color name="item_bg_click">#C4C4C4</color>
+    <color name="item_bg_click_night">#AAAAAA</color>
+    <color name="item_empty_bg">#F5F5F5</color>
+    <color name="item_empty_bg_night">#454545</color>
+    <color name="line">#CCCCCC</color>
+    <color name="line_night">#999999</color>
+
+    <color name="window_bg">#FFFFFF</color>
+    <color name="window_bg_night">#C7C7C7</color>
+
+    <color name="bg_button_normal">#2fc0ed</color>
+    <color name="bg_button_normal_night">#A8A8A8</color>
+    <color name="bg_button_click">#0cc9f2</color>
+    <color name="bg_button_click_night">#9E9E9E</color>
+
+    <color name="textColor">#2fc0ed</color>
+    <color name="textColor_night">#A8A8A8</color>
+
+    <color name="bg_bottom">#F2F2F2</color>
+    <color name="bg_bottom_night">#A8A8A8</color>
+    <color name="bottom_textColor">#969696</color>
+    <color name="bottom_textColor_night">#E0E0E0</color>
+</resources>

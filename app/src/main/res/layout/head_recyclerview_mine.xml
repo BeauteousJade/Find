@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item"
+    android:paddingBottom="10dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/head_recyclerView_mine_imageView_head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_new_picture"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/head_recyclerView_mine_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:maxLines="1"
+            android:text="name"
+            android:textColor="@color/item_textColor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/head_recyclerView_mine_textView_autograph"
+            app:layout_constraintLeft_toRightOf="@id/head_recyclerView_mine_imageView_head"
+            app:layout_constraintTop_toTopOf="@id/head_recyclerView_mine_imageView_head" />
+
+        <TextView
+            android:id="@+id/head_recyclerView_mine_textView_autograph"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="name"
+            android:textColor="@color/item_textColor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_mine_imageView_head"
+            app:layout_constraintLeft_toRightOf="@id/head_recyclerView_mine_imageView_head"
+            app:layout_constraintTop_toBottomOf="@id/head_recyclerView_mine_textView_name" />
+
+        <View
+            android:id="@+id/head_recyclerView_mine_view_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/decoration_gray_01"
+            app:layout_constraintTop_toBottomOf="@id/head_recyclerView_mine_imageView_head" />
+
+        <LinearLayout
+            android:id="@+id/head_recyclerView_mine_linearLayout_note"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/head_recyclerView_mine_linearLayout_follow"
+            app:layout_constraintTop_toBottomOf="@id/head_recyclerView_mine_view_line">
+
+            <TextView
+                android:id="@+id/head_recyclerView_mine_textView_note_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/item_textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帖子"
+                android:textColor="@color/item_textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/head_recyclerView_mine_linearLayout_follow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_mine_linearLayout_note"
+            app:layout_constraintLeft_toRightOf="@id/head_recyclerView_mine_linearLayout_note"
+            app:layout_constraintRight_toLeftOf="@id/head_recyclerView_mine_linearLayout_fans"
+            app:layout_constraintTop_toTopOf="@id/head_recyclerView_mine_linearLayout_note">
+
+            <TextView
+                android:id="@+id/head_recyclerView_mine_textView_follow_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/item_textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关注"
+                android:textColor="@color/item_textColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/head_recyclerView_mine_linearLayout_fans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_mine_linearLayout_note"
+            app:layout_constraintLeft_toRightOf="@id/head_recyclerView_mine_linearLayout_follow"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/head_recyclerView_mine_linearLayout_note">
+
+            <TextView
+                android:id="@+id/head_recyclerView_mine_textView_fans_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:textColor="@color/item_textColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝"
+                android:textColor="@color/item_textColor" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

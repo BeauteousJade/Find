@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_bg_normal">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:id="@+id/head_recyclerView_area_ImageViewView_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/head_recyclerView_area_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="学习"
+            android:textColor="@color/item_textColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/head_recyclerView_area_CustomHorizontalProgressBar_experience"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/head_recyclerView_area_ImageViewView_icon"
+            app:layout_constraintTop_toTopOf="@id/head_recyclerView_area_ImageViewView_icon" />
+
+        <ImageView
+            android:id="@+id/head_recyclerView_area_imageView_level"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_area_textView_name"
+            app:layout_constraintStart_toEndOf="@+id/head_recyclerView_area_textView_name"
+            app:layout_constraintTop_toTopOf="@+id/head_recyclerView_area_textView_name" />
+
+        <TextView
+            android:id="@+id/head_recyclerView_area_textView_rank"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/item_textColor"
+            app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_area_textView_name"
+            app:layout_constraintStart_toEndOf="@+id/head_recyclerView_area_imageView_level"
+            app:layout_constraintTop_toTopOf="@+id/head_recyclerView_area_textView_name" />
+
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:id="@+id/head_recyclerView_area_CustomHorizontalProgressBar_experience"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="3dp"
+            android:progress="0"
+            app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_area_ImageViewView_icon"
+            app:layout_constraintEnd_toEndOf="@+id/head_recyclerView_area_imageView_level"
+            app:layout_constraintStart_toStartOf="@+id/head_recyclerView_area_textView_name"
+            app:layout_constraintTop_toBottomOf="@id/head_recyclerView_area_textView_name"
+            app:mpb_progressStyle="horizontal" />
+
+        <View
+            android:id="@+id/head_recyclerView_area_view_line"
+            android:layout_width="0dp"
+            android:layout_height="4dp"
+            android:background="@color/line"
+            app:layout_constraintBottom_toTopOf="@id/head_recyclerView_area_textView_all"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/head_recyclerView_area_textView_all"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="全部"
+            android:textColor="@color/color_textView_click"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/head_recyclerView_area_textView_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="热门"
+            android:textColor="@color/color_textView_normal"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/head_recyclerView_area_textView_all"
+            app:layout_constraintLeft_toRightOf="@id/head_recyclerView_area_textView_all"
+            app:layout_constraintTop_toTopOf="@id/head_recyclerView_area_textView_all" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_bg_normal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/popup_menu_head_textView_select"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_item"
+        android:textColor="@color/item_textColor"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="从相册中选择图片"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/popup_menu_head_textView_camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_item"
+        android:textColor="@color/item_textColor"
+        android:gravity="center"
+        android:text="拍照"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/popup_menu_head_textView_history"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_item"
+        android:textColor="@color/item_textColor"
+        android:gravity="center"
+        android:text="查看历史头像"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/popup_menu_head_textView_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_item"
+        android:textColor="@color/item_textColor"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="18sp" />
+</LinearLayout>
